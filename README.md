@@ -1,6 +1,6 @@
 # Cate Desktop
 
-![Cate Desktop Preview](./img/screencap.gif)
+<img src="./img/screencap.gif" style="width: 50%; margin-left: 25%;" alt="Cate Desktop Preview">
 
 ## Setup
 
