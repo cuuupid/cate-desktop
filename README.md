@@ -1,6 +1,12 @@
 # Cate Desktop
 
-<img src="./img/screencap.gif" style="width: 50%; margin-left: 25%;" alt="Cate Desktop Preview">
+<style>
+    .screencap {
+        width: 50% !important;
+        margin-left: 25% !important;
+    }
+</style>
+<img src="./img/screencap.gif" width="50%" class="screencap" alt="Cate Desktop Preview">
 
 ## Setup
 
