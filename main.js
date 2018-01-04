@@ -9,7 +9,7 @@ var open = false
 var launch = () => {
     open = true
     let win = new BrowserWindow({
-        width: 1160, height: 740, icon: __dirname + '/icon.ico',        
+        width: 600, height: 760, icon: __dirname + '/icon.ico',        
         webPreferences: {
             plugins: true,
             nodeIntegration: false
@@ -34,7 +34,16 @@ var launch = () => {
         cb(username, password);
     })
     win.webContents.on('dom-ready', (e, d) => {
-        // win.webContents.insertCSS
+        win.webContents.insertCSS(`
+        body { -webkit-app-region: drag; }
+        iframe, font[color="blue"] { display: none; }
+        input, button, img, a, select { -webkit-app-region: no-drag; }
+        body > form > table > tbody > tr { display: none; }
+        body > form > table > tbody > tr:nth-child(2) { display: unset; }
+        body > form > table > tbody > tr:nth-child(2) > td { 
+            display: block;
+        }
+        `)
     })
 }
 
