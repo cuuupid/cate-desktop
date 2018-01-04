@@ -1,5 +1,22 @@
 # Cate Desktop
 
+![Cate Desktop Preview](./img/screencap.gif)
+
+## Setup
+
+Needs `config.js`, I have provided the template `config.temp.js`. 
+
+Need a `config.js` file that reads like this:
+
+``` js
+var username = "YOUR_USERNAME"
+var password = "YOUR_PASSWORD"
+var year = "ACADEMIC_YEAR"
+module.exports = {
+    username, password, year
+}
+```
+
 ## I have Electron, quick start?
 
 `electron .`
